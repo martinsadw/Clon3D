@@ -53,8 +53,6 @@ public class MapManager : MonoBehaviour
 	{
 		mapHolder = new GameObject("Map").transform;
 
-		Vector3 offset = Vector3.down * 0.562f;
-
 		for (int j = 0; j < map.Count; ++j)
 		{
 			GameObject toInstantiate;
@@ -68,8 +66,9 @@ public class MapManager : MonoBehaviour
 					break;
 			}
 
-			GameObject instance = Instantiate(toInstantiate, map[j].pos + offset, Quaternion.identity) as GameObject;
+			GameObject instance = Instantiate(toInstantiate, map[j].pos, Quaternion.identity) as GameObject;
 
+			instance.gameObject.tag = "Wall";
 			instance.transform.SetParent(mapHolder);
 		}
 	}
