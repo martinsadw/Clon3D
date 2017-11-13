@@ -80,7 +80,7 @@ public class MapManager : MonoBehaviour
 		else if (instance != this)
 			Destroy(gameObject);
 
-		InitializeList();
+		//InitializeList();
 		MapSetup();
 	}
 

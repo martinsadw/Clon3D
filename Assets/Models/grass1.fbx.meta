@@ -779,6 +779,9 @@ ModelImporter:
     4300016: Plane|Cube.003|Dupli|0.0.0.0.0.0.0.0.0.0
     4300018: Plane|Cube.002|Dupli|1.0.0.0.0.0.0.0.0.0
     4300020: Plane|Cube.001|Dupli|2.0.0.0.0.0.0.0.0.0
+    4300022: Cube.003
+    4300024: Cube.002
+    4300026: Cube.001
     10800000: Area
     10800002: Lamp
   externalObjects:
@@ -786,22 +789,22 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material
-    second: {fileID: 2100000, guid: a52d98cba680a8043bbef2675efe5cc6, type: 2}
+    second: {fileID: 2100000, guid: f56f0f4aa7a7bd44e899ea2b495ceb9a, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.001
-    second: {fileID: 2100000, guid: 78ff4dac192e45145a7d4d497040c723, type: 2}
+    second: {fileID: 2100000, guid: cee2ca6261f7c0b46af74e3e66222d8b, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material.002
-    second: {fileID: 2100000, guid: 02ff425e90f0ec44fa43aeb56c05895c, type: 2}
+    second: {fileID: 2100000, guid: 8dd3616a871a64f40af52a2e33233486, type: 2}
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: No Name
-    second: {fileID: 2100000, guid: 41e1acd51c9d8194887714701a440d69, type: 2}
+    second: {fileID: 2100000, guid: 01871cc3bc463664fb1888d344a95715, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

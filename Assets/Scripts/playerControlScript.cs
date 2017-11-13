@@ -10,6 +10,11 @@ public class playerControlScript : MonoBehaviour
 	public float accel;
 	public float decel;
 
+    public float maxJumpHeight;
+    public float gravity;
+    public float fallGravity;
+
+    public float jumpSpeed;
 	private Vector2 curVel;
 	private float yVel;
 
@@ -22,6 +27,8 @@ public class playerControlScript : MonoBehaviour
 
 	void Update()
 	{
+        jumpSpeed = Mathf.Sqrt(2 * gravity * maxJumpHeight);
+
 		Vector2 moveDirection = Vector2.zero;
 
 		// NOTE(andre:2017-11-05): Mudar a direcao do movimento demora muito
@@ -62,9 +69,9 @@ public class playerControlScript : MonoBehaviour
 
 		if (controller.isGrounded)
 		{
-			if (Input.GetKey("space"))
+			if (Input.GetKey("z"))
 			{
-				yVel = 8;
+				yVel = jumpSpeed;
 			}
 			else
 			{
@@ -73,7 +80,14 @@ public class playerControlScript : MonoBehaviour
 		}
 		else
 		{
-			yVel -= 25 * Time.deltaTime;
+			if (Input.GetKey("z") && yVel > 0)
+			{
+	             yVel -= gravity * Time.deltaTime;
+			}
+			else
+			{
+	             yVel -= fallGravity * Time.deltaTime;
+			}
 		}
 
 		Vector3 move = new Vector3(curVel.x, yVel, curVel.y);
