@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 16e45f71e5b72dc40b1dc62e0e8b8a34
-timeCreated: 1510886027
+guid: e787b320312e1834ea3864debe895e49
+timeCreated: 1510880808
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -9,14 +9,13 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube
-    9500000: //RootNode
+    4300000: Cylinder.007
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Material
-    second: {fileID: 2100000, guid: 452601b821429064bad3c253ea714cbe, type: 2}
+      name: No Name
+    second: {fileID: 2100000, guid: c697727e32e1e054abaa7710f8d92ff4, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -28,15 +27,14 @@ ModelImporter:
     resampleCurves: 1
     optimizeGameObjects: 0
     motionNodeName: 
-    rigImportErrors: "Invalid Avatar Rig Configuration. Missing or invalid transform:\n\tRequired
-      human bone 'Hips' not found\n"
+    rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
     animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
-    animationCompression: 3
+    animationCompression: 1
     animationRotationError: 0.5
     animationPositionError: 0.5
     animationScaleError: 0.5

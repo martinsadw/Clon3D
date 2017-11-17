@@ -15,11 +15,6 @@ public class BobbingScript : MonoBehaviour
 		newPosition.y = amplitude.y * Mathf.Sin(Mathf.PI * 2 * frequency.y * Time.fixedTime + phase.y);
 		newPosition.z = amplitude.z * Mathf.Sin(Mathf.PI * 2 * frequency.z * Time.fixedTime + phase.z);
 
-		Debug.Log("pos.x: " + newPosition.x);
-		Debug.Log("pos.y: " + newPosition.y);
-		Debug.Log("pos.z: " + newPosition.z);
-
 		transform.localPosition = newPosition;
-		// transform.position = new Vector3(0, 0, 0);
 	}
 }
