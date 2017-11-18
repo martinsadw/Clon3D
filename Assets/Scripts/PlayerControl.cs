@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class playerControlScript : MonoBehaviour
+public class PlayerControl : MonoBehaviour
 {
     private CharacterController controller;
 
@@ -14,8 +14,8 @@ public class playerControlScript : MonoBehaviour
     public float gravity;
     public float fallGravity;
 
-    public float jumpSpeed;
-	private Vector2 curVel;
+    [HideInInspector] public float jumpSpeed;
+	[HideInInspector] public Vector2 curVel;
 	private float yVel;
 
 	void Start()
