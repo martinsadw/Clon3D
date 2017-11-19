@@ -4,4 +4,5 @@ using UnityEngine;
 public class Item : ScriptableObject
 {
 	public GameObject prefab;
+	public int type;
 }

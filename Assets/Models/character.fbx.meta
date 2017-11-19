@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 16e45f71e5b72dc40b1dc62e0e8b8a34
-timeCreated: 1510993726
+timeCreated: 1511084794
 licenseType: Free
 ModelImporter:
   serializedVersion: 22
@@ -104,9 +104,11 @@ ModelImporter:
     3300000: //RootNode
     3300002: Cube
     4300000: Cube
-    7400000: Armature|Idle
-    7400002: Armature|Run
-    7400004: Armature|Walk
+    7400000: Idle
+    7400002: Run
+    7400004: Walk
+    7400006: Attack.L
+    7400008: Attack.R
     9500000: //RootNode
     13700000: Cube
   externalObjects:
@@ -114,7 +116,7 @@ ModelImporter:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
       name: Material
-    second: {fileID: 2100000, guid: b89e582d3957bd349ada7680e2f66a75, type: 2}
+    second: {fileID: 2100000, guid: 4a6c2c70aaeba684386415b91d8e1cab, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
@@ -129,13 +131,7 @@ ModelImporter:
     rigImportErrors: 
     rigImportWarnings: 
     animationImportErrors: 
-    animationImportWarnings: "\nClip 'Armature|Run' has import animation warnings
-      that might lower retargeting quality:\nNote: Activate translation DOF on avatar
-      to improve retargeting quality.\n\t'Chest' is inbetween humanoid transforms
-      and has rotation animation that will be discarded.\n\nClip 'Armature|Walk' has
-      import animation warnings that might lower retargeting quality:\nNote: Activate
-      translation DOF on avatar to improve retargeting quality.\n\t'Chest' is inbetween
-      humanoid transforms and has rotation animation that will be discarded.\n"
+    animationImportWarnings: 
     animationRetargetingWarnings: 
     animationDoRetargetingWarnings: 0
     importAnimatedCustomProperties: 0
@@ -148,7 +144,7 @@ ModelImporter:
     extraUserProperties: []
     clipAnimations:
     - serializedVersion: 16
-      name: Armature|Idle
+      name: Idle
       takeName: Armature|Idle
       firstFrame: 0
       lastFrame: 99
@@ -176,7 +172,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|Run
+      name: Run
       takeName: Armature|Run
       firstFrame: 0
       lastFrame: 16
@@ -204,7 +200,7 @@ ModelImporter:
       maskSource: {instanceID: 0}
       additiveReferencePoseFrame: 0
     - serializedVersion: 16
-      name: Armature|Walk
+      name: Walk
       takeName: Armature|Walk
       firstFrame: 0
       lastFrame: 24
@@ -224,6 +220,62 @@ ModelImporter:
       keepOriginalPositionXZ: 0
       heightFromFeet: 0
       mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack.L
+      takeName: Armature|Attack
+      firstFrame: 0
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 0
+      bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
+      curves: []
+      events: []
+      transformMask: []
+      maskType: 3
+      maskSource: {instanceID: 0}
+      additiveReferencePoseFrame: 0
+    - serializedVersion: 16
+      name: Attack.R
+      takeName: Armature|Attack
+      firstFrame: 0
+      lastFrame: 21
+      wrapMode: 0
+      orientationOffsetY: 0
+      level: 0
+      cycleOffset: 0
+      loop: 0
+      hasAdditiveReferencePose: 0
+      loopTime: 0
+      loopBlend: 0
+      loopBlendOrientation: 0
+      loopBlendPositionY: 0
+      loopBlendPositionXZ: 0
+      keepOriginalOrientation: 0
+      keepOriginalPositionY: 1
+      keepOriginalPositionXZ: 0
+      heightFromFeet: 0
+      mirror: 1
       bodyMask: 01000000010000000100000001000000010000000100000001000000010000000100000001000000010000000100000001000000
       curves: []
       events: []
@@ -480,6 +532,14 @@ ModelImporter:
         modified: 0
     - boneName: Fingers02.R
       humanName: Right Little Intermediate
+      limit:
+        min: {x: 0, y: 0, z: 0}
+        max: {x: 0, y: 0, z: 0}
+        value: {x: 0, y: 0, z: 0}
+        length: 0
+        modified: 0
+    - boneName: Chest
+      humanName: Chest
       limit:
         min: {x: 0, y: 0, z: 0}
         max: {x: 0, y: 0, z: 0}
