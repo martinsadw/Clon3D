@@ -39,4 +39,18 @@ public class AreaFollow : MonoBehaviour
 			controller.Move(direction * Time.deltaTime);
 		}
 	}
+
+	void OnControllerColliderHit(ControllerColliderHit hit)
+	{
+		if (hit.collider.CompareTag("Player"))
+		{
+			PlayerControl control = hit.gameObject.GetComponent<PlayerControl>();
+			PlayerHealth health = hit.gameObject.GetComponent<PlayerHealth>();
+
+			control.curVel = new Vector2(hit.moveDirection.x, hit.moveDirection.z) * 10;
+			control.yVel = 7;
+
+			health.TakeDamage(1);
+		}
+	}
 }

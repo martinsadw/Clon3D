@@ -16,7 +16,7 @@ public class PlayerControl : MonoBehaviour
 
     [HideInInspector] public float jumpSpeed;
 	[HideInInspector] public Vector2 curVel;
-	private float yVel;
+	public float yVel;
 
 	void Start()
 	{

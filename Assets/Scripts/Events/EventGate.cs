@@ -10,13 +10,10 @@ public class EventGate : MonoBehaviour
 	public void DecrementCounter(int amount = 1)
 	{
 		counter -= amount;
-		Debug.Log("ccccc");
 		if (counter <= 0)
 		{
-			Debug.Log("bbbbb");
 			foreach (GameObject tiedObject in objectList)
 			{
-				Debug.Log("aaaaa");
 				Destroy(tiedObject);
 			}
 		}
