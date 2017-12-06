@@ -1,11 +1,15 @@
 fileFormatVersion: 2
 guid: 88be824d70e730d4f95c4705d6551f9d
-timeCreated: 1512497057
+timeCreated: 1512596919
 licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - enemyPrefab: {instanceID: 0}
+  - enemySoundPrefab: {fileID: 1171888855750370, guid: a7945c08b30f68d48b825213f9b32551,
+      type: 2}
+  - targetTrigger: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
