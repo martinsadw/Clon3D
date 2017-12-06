@@ -21,14 +21,16 @@ public class PlayerTrigger : MonoBehaviour
 
 	void OnTriggerEnter(Collider other)
 	{
-	    if (other.CompareTag("Player")) {
+	    if (other.CompareTag("Player"))
+		{
 			playerInsideTrigger = true;
 	    }
 	}
 
 	void OnTriggerExit(Collider other)
 	{
-	    if (other.CompareTag("Player")) {
+	    if (other.CompareTag("Player"))
+		{
 			playerInsideTrigger = false;
 	    }
 	}

@@ -9,7 +9,6 @@ public class SwordTrap : MonoBehaviour
 
 	void OnTriggerEnter(Collider other)
 	{
-		Debug.Log(other.gameObject.tag);
 		if (other.gameObject.tag == "Player")
 		{
 			Inventory playerInventory = other.gameObject.GetComponent<Inventory>();
