@@ -2,9 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class swordTrap : MonoBehaviour
+public class SwordTrap : MonoBehaviour
 {
 	public Item item;
+	public List<GameObject> spawnersList;
 
 	void OnTriggerEnter(Collider other)
 	{
@@ -16,7 +17,8 @@ public class swordTrap : MonoBehaviour
 			playerInventory.AddItem(item);
 			Destroy(gameObject);
 
-			// Spawn Enemies
+			foreach (GameObject spawner in spawnersList)
+				spawner.SetActive(true);
 		}
 	}
 }
