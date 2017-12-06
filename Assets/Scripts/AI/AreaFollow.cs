@@ -29,15 +29,18 @@ public class AreaFollow : MonoBehaviour
 
 	void Update()
 	{
+		Vector3 direction = Vector3.zero;
+
 		if (targetTrigger.playerInsideTrigger)
 		{
-			Vector3 direction = Vector3.Normalize(target.transform.position - transform.position);
+			direction += Vector3.Normalize(target.transform.position - transform.position);
 			direction *= speed;
-			direction.y = -gravity;
 			// transform.position += Vector3.Normalize(direction) * speed * Time.deltaTime;
 			// rb.velocity = Vector3.Normalize(direction) * speed;
-			controller.Move(direction * Time.deltaTime);
 		}
+
+		direction.y = -gravity;
+		controller.Move(direction * Time.deltaTime);
 	}
 
 	void OnControllerColliderHit(ControllerColliderHit hit)

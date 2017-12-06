@@ -6,7 +6,6 @@ public class Spawner : MonoBehaviour
 {
 	public int numEnemies;
 	public GameObject enemyPrefab;
-    public GameObject enemySoundPrefab;
 	public PlayerTrigger targetTrigger;
 	public float delay;
 
@@ -24,8 +23,6 @@ public class Spawner : MonoBehaviour
 		while (numEnemies > 0)
 		{
 			GameObject enemy = Instantiate(enemyPrefab, transform.position, Quaternion.identity) as GameObject;
-            GameObject enemySound = Instantiate(enemySoundPrefab, transform.position, Quaternion.identity) as GameObject;
-            enemySound.transform.parent = enemy.transform;
             AreaFollow areaFollow = enemy.GetComponent<AreaFollow>();
 			areaFollow.targetTrigger = targetTrigger;
 			if (eventGateObject)
