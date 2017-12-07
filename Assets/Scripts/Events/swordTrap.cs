@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SwordTrap : MonoBehaviour
+public class swordTrap : MonoBehaviour
 {
 	public Item item;
 	public List<GameObject> spawnersList;
