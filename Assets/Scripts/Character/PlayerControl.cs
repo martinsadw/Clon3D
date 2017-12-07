@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerControl : MonoBehaviour
 {
@@ -27,6 +28,11 @@ public class PlayerControl : MonoBehaviour
 
 	void Update()
 	{
+		if (Input.GetKey(KeyCode.Escape))
+		{
+            SceneManager.LoadScene("Menu");
+		}
+
         jumpSpeed = Mathf.Sqrt(2 * gravity * maxJumpHeight);
 
 		Vector2 moveDirection = Vector2.zero;
